@@ -1,11 +1,10 @@
-import './App.css'
-import CarPhotos from './assets/images';
+import "./App.css";
+import Cards from "./components/cards";
 
 const App = () => (
   <div>
-    <CarPhotos />
+    <Cards /> {}
   </div>
 );
 
 export default App;
-
