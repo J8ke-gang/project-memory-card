@@ -1,5 +1,9 @@
 # React + Vite
-application includes a scoreboard, which counts the current score, and a “Best Score”, which shows the highest score you’ve achieved. A function that displays the cards in a random order anytime a user clicks one. 10 diffrent images of classic cars to choose from.
+
+Application includes a scoreboard, which counts the current score, and Best Score which shows the highest score you’ve achieved.<br>
+A function that displays the cards in a random order anytime a user clicks one.<br>
+10 different images of classic cars to choose from. <br>
+to reset highest score you refresh page.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Scoreboard from "./scoreboard";
 import CarPhotos from "../assets/carPhotos";
-
+/*shuffle function*/
 const shuffleCards = (cards) => {
   const shuffled = [...cards];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -17,7 +17,7 @@ const Cards = () => {
   const [score, setScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
   const [message, setMessage] = useState("Pick a car");
-
+  /*click car function*/
   const handleCardClick = (car) => {
     if (!selectedCard) {
       setSelectedCard(car);
@@ -46,7 +46,9 @@ const Cards = () => {
         {cars.map((car, index) => (
           <div
             key={index}
-            className={`card ${car.matched ? 'matched' : car.notMatched ? 'not-matched' : ''}`}
+            className={`card ${
+              car.matched ? "matched" : car.notMatched ? "not-matched" : ""
+            }`}
             onClick={() => handleCardClick(car)}
           >
             <h2>{car.title}</h2>
